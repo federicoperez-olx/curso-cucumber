@@ -1,5 +1,7 @@
 package pageObjects;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
@@ -14,6 +16,7 @@ public class SignOnPage {
 	}
 	
 	public void verifyInPage() {
+		this.driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		Assert.assertTrue(driver.findElements(logoImage).size()>0);
 	}
 	

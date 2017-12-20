@@ -62,7 +62,7 @@ formatter.examples({
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 6108513410,
+  "duration": 19365829786,
   "status": "passed"
 });
 formatter.scenario({
@@ -112,7 +112,7 @@ formatter.match({
   "location": "turism.I_enter_a_username(String)"
 });
 formatter.result({
-  "duration": 244923551,
+  "duration": 263044355,
   "status": "passed"
 });
 formatter.match({
@@ -125,14 +125,14 @@ formatter.match({
   "location": "turism.I_enter_a_password(String)"
 });
 formatter.result({
-  "duration": 69202982,
+  "duration": 72031164,
   "status": "passed"
 });
 formatter.match({
   "location": "turism.I_click_sign_in_button()"
 });
 formatter.result({
-  "duration": 1213199862,
+  "duration": 1786696835,
   "status": "passed"
 });
 formatter.match({
@@ -145,11 +145,11 @@ formatter.match({
   "location": "turism.login_results_must_be(String)"
 });
 formatter.result({
-  "duration": 35228277,
+  "duration": 53577019,
   "status": "passed"
 });
 formatter.after({
-  "duration": 746242204,
+  "duration": 1092174623,
   "status": "passed"
 });
 });
