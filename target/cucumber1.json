@@ -1,0 +1,119 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 6108513410,
+              "status": "passed"
+            },
+            "match": {
+              "location": "turism.InitializeTest()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "Log in to the system",
+        "description": "",
+        "id": "curso-de-automation;log-in-to-the-system;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 746242204,
+              "status": "passed"
+            },
+            "match": {
+              "location": "turism.TearDownTest()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 244923551,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I enter a username pepe",
+            "match": {
+              "arguments": [
+                {
+                  "val": "pepe",
+                  "offset": 19
+                }
+              ],
+              "location": "turism.I_enter_a_username(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 69202982,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I enter a password pepe",
+            "match": {
+              "arguments": [
+                {
+                  "val": "pepe",
+                  "offset": 19
+                }
+              ],
+              "location": "turism.I_enter_a_password(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1213199862,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I click  Sign-In button",
+            "match": {
+              "location": "turism.I_click_sign_in_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 35228277,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "login result must be badLogin",
+            "match": {
+              "arguments": [
+                {
+                  "val": "badLogin",
+                  "offset": 21
+                }
+              ],
+              "location": "turism.login_results_must_be(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Curso de automation",
+    "description": "",
+    "id": "curso-de-automation",
+    "keyword": "Feature",
+    "uri": "src/test/java/features/tourism.feature"
+  }
+]
