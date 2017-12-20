@@ -49,6 +49,7 @@ public class turism {
   
   @Then("^login result must be (.*)")
   public void login_results_must_be(String result) {
+	  
 	  SignOnPage signOnPage = new SignOnPage(driver);
 	  signOnPage.verifyInPage();
   }
