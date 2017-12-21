@@ -2,4 +2,6 @@
 /home/federicoperez/Documents/code/CursoIICucumber/src/test/java/pageObjects/SignOnPage.java
 /home/federicoperez/Documents/code/CursoIICucumber/src/test/java/steps/turism.java
 /home/federicoperez/Documents/code/CursoIICucumber/src/test/java/utils/Context.java
+/home/federicoperez/Documents/code/CursoIICucumber/src/test/java/steps/BaseStep.java
+/home/federicoperez/Documents/code/CursoIICucumber/src/test/java/steps/register.java
 /home/federicoperez/Documents/code/CursoIICucumber/src/test/java/Curso/AutomationII/RunCuckesTest.java

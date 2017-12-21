@@ -1,0 +1,341 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 4876256527,
+              "status": "passed"
+            },
+            "match": {
+              "location": "turism.InitializeTest()"
+            }
+          }
+        ],
+        "line": 24,
+        "name": "Register",
+        "description": "",
+        "id": "register;register;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 189113482,
+              "status": "passed"
+            },
+            "match": {
+              "location": "turism.TearDownTest()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 5,
+            "name": "User is in Homepage",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 6,
+            "name": "User clicks register link",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 7,
+            "name": "User inputs First name fede",
+            "match": {},
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 8,
+            "name": "User inputs Last name pepe",
+            "match": {},
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 9,
+            "name": "User inputs Phone 1541041234",
+            "match": {},
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 10,
+            "name": "User inputs Address1 street lol",
+            "match": {},
+            "matchedColumns": [
+              4
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 11,
+            "name": "User inputs Address2 a2",
+            "match": {},
+            "matchedColumns": [
+              5
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 12,
+            "name": "User inputs City Sumaru City",
+            "match": {},
+            "matchedColumns": [
+              6
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 13,
+            "name": "User inputs State Kyushu",
+            "match": {},
+            "matchedColumns": [
+              7
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 14,
+            "name": "User inputs Postal Code 1406",
+            "match": {},
+            "matchedColumns": [
+              8
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 15,
+            "name": "User selects Country Japan",
+            "match": {},
+            "matchedColumns": [
+              9
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 16,
+            "name": "User inputs User fede",
+            "match": {},
+            "matchedColumns": [
+              10
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 17,
+            "name": "User inputs Password pass",
+            "match": {},
+            "matchedColumns": [
+              11
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 18,
+            "name": "User inputs Confirms Password \u003cConfirms Password\u003e",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 19,
+            "name": "User clicks Submit button",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 20,
+            "name": "success shows up",
+            "match": {},
+            "matchedColumns": [
+              13
+            ],
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Register",
+    "description": "",
+    "id": "register",
+    "keyword": "Feature",
+    "uri": "signon.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 2060280739,
+              "status": "passed"
+            },
+            "match": {
+              "location": "turism.InitializeTest()"
+            }
+          }
+        ],
+        "line": 11,
+        "name": "Log in to the system",
+        "description": "",
+        "id": "curso-de-automation;log-in-to-the-system;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 94875803,
+              "status": "passed"
+            },
+            "match": {
+              "location": "turism.TearDownTest()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1988067658,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I enter a username pepe",
+            "match": {
+              "arguments": [
+                {
+                  "val": "pepe",
+                  "offset": 19
+                }
+              ],
+              "location": "turism.I_enter_a_username(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 51990576,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I enter a password pepe",
+            "match": {
+              "arguments": [
+                {
+                  "val": "pepe",
+                  "offset": 19
+                }
+              ],
+              "location": "turism.I_enter_a_password(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1246352406,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I click  Sign-In button",
+            "match": {
+              "location": "turism.I_click_sign_in_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 56503725,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "login result must be badLogin",
+            "match": {
+              "arguments": [
+                {
+                  "val": "badLogin",
+                  "offset": 21
+                }
+              ],
+              "location": "turism.login_results_must_be(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Curso de automation",
+    "description": "",
+    "id": "curso-de-automation",
+    "keyword": "Feature",
+    "uri": "tourism.feature"
+  }
+]
