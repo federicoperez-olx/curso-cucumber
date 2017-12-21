@@ -1,5 +1,6 @@
 package pageObjects;
 
+import org.testng.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -7,11 +8,12 @@ import org.openqa.selenium.WebElement;
 public class HomePage {
 
 	private WebDriver driver;
+
 	public HomePage(WebDriver driver)
 	{
 		this.driver = driver;
 	}
-	
+
 	public String expectedTitle()
 	{
 		return "Welcome: Mercury Tours";
@@ -67,7 +69,12 @@ public class HomePage {
 
 	public void assertHomePage()
 	{
-		assert expectedTitle() == driver.getTitle();
+		//sin encuentra este element tira excepción
+		driver.findElement(By.name("home"));
+
+		/*String homepageUrl = "http://newtours.demoaut.com";
+		Assert.assertTrue( driver.getCurrentUrl().equals(homepageUrl) );
+		*/
 	}
-	
+
 }

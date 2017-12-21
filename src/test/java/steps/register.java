@@ -8,14 +8,15 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import pageObjects.HomePage;
-import pageObjects.SignOnPage;
+import pageObjects.RegisterPage;
 import utils.Context;
+
 
 public class register {
 
 	private Context context;
 	private WebDriver driver;
-	private SignOnPage signOnPage;
+	private RegisterPage registerPage;
 	private HomePage homePage;
 
 	public register(Context context) {
@@ -27,20 +28,22 @@ public class register {
 	public void InitializeTest() {
 		System.out.println("--------------- dependency injection in initialize");
 		driver = context.getDriver();
-		driver.navigate().to("http://newtours.demoaut.com/");
+		driver.navigate().to("http://newtours.demoaut.com");
+
 		homePage = new HomePage(driver);
-		signOnPage = new SignOnPage(driver);
+		registerPage = new RegisterPage(driver);
 	}
 
 	@After
 	public void TearDownTest() {
 		System.out.println("--------------- dependency injection in teardown");
-		// driver.close();
+		//driver.close();
+		driver.quit();
 	}
 
 	@Given("^User is in Homepage$")
 	public void user_is_in_Homepage() {
-
+		homePage.assertHomePage();
 	}
 
 	@Given("^User clicks register link$")
@@ -50,72 +53,72 @@ public class register {
 
 	@Given("^User inputs First name \\\"([^\\\"]*)\\\"$")
 	public void user_inputs_First_name(String fname) {
-		signOnPage.enterFirstName(fname);
+		registerPage.enterFirstName(fname);
 	}
 
 	@Given("^User inputs Last name \\\"([^\\\"]*)\\\"$")
 	public void user_inputs_Last_name(String lname) {
-		signOnPage.enterLastName(lname);
+		registerPage.enterLastName(lname);
 	}
 
 	@Given("^User inputs Phone \\\"([^\\\"]*)\\\"$")
 	public void user_inputs_Phone(String phone) {
-		signOnPage.enterPhone(phone);
+		registerPage.enterPhone(phone);
 	}
 
 	@Given("^User inputs Address1 \\\"([^\\\"]*)\\\"$")
 	public void user_inputs_Address(String address) {
-		signOnPage.enterAdress1(address);
+		registerPage.enterAdress1(address);
 	}
 
 	@Given("^User inputs Address2 \\\"([^\\\"]*)\\\"$")
 	public void user_inputs_Address2(String address) {
-		signOnPage.enterAdress2(address);
+		registerPage.enterAdress2(address);
 	}
 
 	@Given("^User inputs City \\\"([^\\\"]*)\\\"$")
 	public void user_inputs_City(String city) {
-		signOnPage.enterCity(city);
+		registerPage.enterCity(city);
 	}
 
 	@Given("^User inputs State \\\"([^\\\"]*)\\\"$")
 	public void user_inputs_State(String state) {
-		signOnPage.enterState(state);
+		registerPage.enterState(state);
 	}
 
 	@Given("^User inputs Postal Code \\\"([^\\\"]*)\\\"$")
 	public void user_inputs_Postal_Code(String postalCode) {
-		signOnPage.enterPostalCode(postalCode);
+		registerPage.enterPostalCode(postalCode);
 	}
 
 	@Given("^User selects Country \\\"([^\\\"]*)\\\"$")
 	public void user_selects_Country(String country) {
-		signOnPage.selectCountryByVisibleText(country.toUpperCase());
+		registerPage.selectCountryByVisibleText(country.toUpperCase());
 	}
 
 	@Given("^User inputs User \\\"([^\\\"]*)\\\"$")
 	public void user_inputs_User(String user) {
-		signOnPage.enterUsername(user);
+		registerPage.enterUsername(user);
 	}
 
 	@Given("^User inputs Password \\\"([^\\\"]*)\\\"$")
 	public void user_inputs_Password(String pass) {
-		signOnPage.enterPassword(pass);
+		registerPage.enterPassword(pass);
 	}
 
 	@Given("^User inputs Confirms Password \\\"([^\\\"]*)\\\"$")
 	public void user_inputs_Confirms_Password(String confirmPassword) {
-		signOnPage.enterConfirmPassword(confirmPassword);
+		registerPage.enterConfirmPassword(confirmPassword);
 	}
 
 	@When("^User clicks Submit button$")
 	public void user_clicks_Submit_button() {
-		signOnPage.clickRegister();
+		registerPage.clickRegister();
 	}
 
-	@Then("^success shows up$")
+	@Then("^Success shows up$")
 	public void success_shows_up() {
-
+		registerPage.assertSucessfulRegister();
 	}
 
 }

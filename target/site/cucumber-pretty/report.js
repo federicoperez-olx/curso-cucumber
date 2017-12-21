@@ -1,4 +1,4 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("signon.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("register.feature");
 formatter.feature({
   "line": 1,
   "name": "Register",
@@ -128,11 +128,11 @@ formatter.examples({
     },
     {
       "cells": [
-        "fede",
-        "pepe",
+        "Carlos",
+        "Chavez",
         "1541041234",
         "mail@mail.com",
-        "street lol",
+        "street l0l",
         "a2",
         "Sumaru City",
         "Kyushu",
@@ -141,7 +141,7 @@ formatter.examples({
         "fede",
         "pass",
         "pass",
-        "success"
+        "Success"
       ],
       "line": 24,
       "id": "register;register;;2"
@@ -150,11 +150,11 @@ formatter.examples({
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 3077466708,
+  "duration": 2660241979,
   "status": "passed"
 });
 formatter.before({
-  "duration": 474897506,
+  "duration": 501321287,
   "status": "passed"
 });
 formatter.scenario({
@@ -177,7 +177,7 @@ formatter.step({
 });
 formatter.step({
   "line": 7,
-  "name": "User inputs First name \"fede\"",
+  "name": "User inputs First name \"Carlos\"",
   "matchedColumns": [
     0
   ],
@@ -185,7 +185,7 @@ formatter.step({
 });
 formatter.step({
   "line": 8,
-  "name": "User inputs Last name \"pepe\"",
+  "name": "User inputs Last name \"Chavez\"",
   "matchedColumns": [
     1
   ],
@@ -201,7 +201,7 @@ formatter.step({
 });
 formatter.step({
   "line": 10,
-  "name": "User inputs Address1 \"street lol\"",
+  "name": "User inputs Address1 \"street l0l\"",
   "matchedColumns": [
     4
   ],
@@ -275,7 +275,7 @@ formatter.step({
 });
 formatter.step({
   "line": 20,
-  "name": "success shows up",
+  "name": "Success shows up",
   "matchedColumns": [
     13
   ],
@@ -285,40 +285,40 @@ formatter.match({
   "location": "register.user_is_in_Homepage()"
 });
 formatter.result({
-  "duration": 61855351,
+  "duration": 83816404,
   "status": "passed"
 });
 formatter.match({
   "location": "register.user_clicks_register_link()"
 });
 formatter.result({
-  "duration": 655999456,
+  "duration": 877664933,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "fede",
+      "val": "Carlos",
       "offset": 24
     }
   ],
   "location": "register.user_inputs_First_name(String)"
 });
 formatter.result({
-  "duration": 97621967,
+  "duration": 120846055,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "pepe",
+      "val": "Chavez",
       "offset": 23
     }
   ],
   "location": "register.user_inputs_Last_name(String)"
 });
 formatter.result({
-  "duration": 82335961,
+  "duration": 88107012,
   "status": "passed"
 });
 formatter.match({
@@ -331,20 +331,20 @@ formatter.match({
   "location": "register.user_inputs_Phone(String)"
 });
 formatter.result({
-  "duration": 97804791,
+  "duration": 93574650,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "street lol",
+      "val": "street l0l",
       "offset": 22
     }
   ],
   "location": "register.user_inputs_Address(String)"
 });
 formatter.result({
-  "duration": 99397292,
+  "duration": 101515656,
   "status": "passed"
 });
 formatter.match({
@@ -357,7 +357,7 @@ formatter.match({
   "location": "register.user_inputs_Address2(String)"
 });
 formatter.result({
-  "duration": 34098354,
+  "duration": 43332223,
   "status": "passed"
 });
 formatter.match({
@@ -370,7 +370,7 @@ formatter.match({
   "location": "register.user_inputs_City(String)"
 });
 formatter.result({
-  "duration": 114393398,
+  "duration": 107531037,
   "status": "passed"
 });
 formatter.match({
@@ -383,7 +383,7 @@ formatter.match({
   "location": "register.user_inputs_State(String)"
 });
 formatter.result({
-  "duration": 91257939,
+  "duration": 95936441,
   "status": "passed"
 });
 formatter.match({
@@ -396,7 +396,7 @@ formatter.match({
   "location": "register.user_inputs_Postal_Code(String)"
 });
 formatter.result({
-  "duration": 86797223,
+  "duration": 96680312,
   "status": "passed"
 });
 formatter.match({
@@ -409,7 +409,7 @@ formatter.match({
   "location": "register.user_selects_Country(String)"
 });
 formatter.result({
-  "duration": 95010577,
+  "duration": 86589536,
   "status": "passed"
 });
 formatter.match({
@@ -422,7 +422,7 @@ formatter.match({
   "location": "register.user_inputs_User(String)"
 });
 formatter.result({
-  "duration": 75830884,
+  "duration": 77841265,
   "status": "passed"
 });
 formatter.match({
@@ -435,7 +435,7 @@ formatter.match({
   "location": "register.user_inputs_Password(String)"
 });
 formatter.result({
-  "duration": 77232532,
+  "duration": 78672129,
   "status": "passed"
 });
 formatter.match({
@@ -448,29 +448,29 @@ formatter.match({
   "location": "register.user_inputs_Confirms_Password(String)"
 });
 formatter.result({
-  "duration": 121056302,
+  "duration": 103976659,
   "status": "passed"
 });
 formatter.match({
   "location": "register.user_clicks_Submit_button()"
 });
 formatter.result({
-  "duration": 911197760,
+  "duration": 1043220826,
   "status": "passed"
 });
 formatter.match({
   "location": "register.success_shows_up()"
 });
 formatter.result({
-  "duration": 64163,
+  "duration": 29749723,
   "status": "passed"
 });
 formatter.after({
-  "duration": 71448890,
+  "duration": 74334101,
   "status": "passed"
 });
 formatter.after({
-  "duration": 47396,
+  "duration": 46644,
   "status": "passed"
 });
 formatter.uri("tourism.feature");
@@ -537,11 +537,11 @@ formatter.examples({
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 1941338381,
+  "duration": 2759690450,
   "status": "passed"
 });
 formatter.before({
-  "duration": 480809732,
+  "duration": 456720775,
   "status": "passed"
 });
 formatter.scenario({
@@ -591,7 +591,7 @@ formatter.match({
   "location": "turism.I_enter_a_username(String)"
 });
 formatter.result({
-  "duration": 90180013,
+  "duration": 92944474,
   "status": "passed"
 });
 formatter.match({
@@ -604,14 +604,14 @@ formatter.match({
   "location": "turism.I_enter_a_password(String)"
 });
 formatter.result({
-  "duration": 70497293,
+  "duration": 74907952,
   "status": "passed"
 });
 formatter.match({
   "location": "turism.I_click_sign_in_button()"
 });
 formatter.result({
-  "duration": 1120433458,
+  "duration": 1222818840,
   "status": "passed"
 });
 formatter.match({
@@ -624,15 +624,15 @@ formatter.match({
   "location": "turism.login_results_must_be(String)"
 });
 formatter.result({
-  "duration": 35901407,
+  "duration": 36075540,
   "status": "passed"
 });
 formatter.after({
-  "duration": 109649743,
+  "duration": 65784641,
   "status": "passed"
 });
 formatter.after({
-  "duration": 42168,
+  "duration": 2296127,
   "status": "passed"
 });
 });

@@ -20,5 +20,5 @@ Scenario Outline: Register
  Then <Result> shows up
 
  Examples:
-  | First name | Last name | Phone | Email | Address1 | Address2 | City | State | Postal Code | Country | User | Password | Confirm Password | Result |
-  | fede       | pepe      | 1541041234 | mail@mail.com | street lol | a2 | Sumaru City | Kyushu | 1406 | Japan | fede | pass | pass | success |
+  | First name | Last name | Phone      | Email         | Address1   | Address2 | City        | State  | Postal Code  | Country | User  | Password | Confirm Password | Result  |
+  | Carlos     | Chavez    | 1541041234 | mail@mail.com | street l0l | a2       | Sumaru City | Kyushu | 1406         | Japan   | fede  | pass     | pass             | Success |

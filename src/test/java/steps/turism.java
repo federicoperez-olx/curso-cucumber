@@ -8,7 +8,7 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import pageObjects.HomePage;
-import pageObjects.SignOnPage;
+import pageObjects.RegisterPage;
 import utils.Context;
 
 public class turism {
@@ -24,15 +24,16 @@ public class turism {
 
 	@Before
 	public void InitializeTest() {
-		
+
 		driver = context.getDriver();
-		driver.navigate().to("http://newtours.demoaut.com/");
+		driver.navigate().to("http://newtours.demoaut.com");
 		homePage = new HomePage(driver);
 	}
 
 	@After
 	public void TearDownTest() {
-		driver.close();
+		//driver.close();
+		driver.quit();
 	}
 
 	@Given("^I enter a username (.*)")
@@ -53,8 +54,8 @@ public class turism {
 	@Then("^login result must be (.*)")
 	public void login_results_must_be(String result) {
 
-		SignOnPage signOnPage = new SignOnPage(driver);
-		signOnPage.verifyInPage();
+		RegisterPage RegisterPage = new RegisterPage(driver);
+		RegisterPage.verifyInPage();
 	}
 
 }
