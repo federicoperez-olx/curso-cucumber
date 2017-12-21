@@ -1,24 +1,41 @@
 package steps;
 
+import org.openqa.selenium.WebDriver;
+
+import cucumber.api.java.After;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import pageObjects.HomePage;
 import pageObjects.SignOnPage;
 import utils.Context;
 
-public class register extends BaseStep {
+public class register {
+
+	private Context context;
+	private WebDriver driver;
 	private SignOnPage signOnPage;
+	private HomePage homePage;
 
 	public register(Context context) {
-		super(context);
+		System.out.println("--------------- dependency injection in register");
+		this.context = context;
 	}
 
-	@Override
 	@Before
 	public void InitializeTest() {
-		super.InitializeTest();
+		System.out.println("--------------- dependency injection in initialize");
+		driver = context.getDriver();
+		driver.navigate().to("http://newtours.demoaut.com/");
+		homePage = new HomePage(driver);
 		signOnPage = new SignOnPage(driver);
+	}
+
+	@After
+	public void TearDownTest() {
+		System.out.println("--------------- dependency injection in teardown");
+		driver.close();
 	}
 
 	@Given("^User is in Homepage$")

@@ -1,5 +1,7 @@
 package steps;
 
+import org.openqa.selenium.WebDriver;
+
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
@@ -9,50 +11,50 @@ import pageObjects.HomePage;
 import pageObjects.SignOnPage;
 import utils.Context;
 
-public class turism extends BaseStep
-{
+public class turism {
+	private WebDriver driver;
+
 	private HomePage homePage;
-	
+	private Context context;
+
 	public turism(Context context) {
-		super(context);
+		System.out.println("dependency injection in homepage");
+		this.context = context;
 	}
 
-  @Before
-  public void InitializeTest()
-  {
-    super.InitializeTest();
-	homePage = new HomePage(driver);
-  }
+	@Before
+	public void InitializeTest() {
+		
+		driver = context.getDriver();
+		driver.navigate().to("http://newtours.demoaut.com/");
+		homePage = new HomePage(driver);
+	}
 
-  @Override
-  @After
-  public void TearDownTest()
-  {
-    super.TearDownTest();
-  }
+	@After
+	public void TearDownTest() {
+		driver.close();
+	}
 
-  @Given("^I enter a username (.*)")
-  public void I_enter_a_username(String user)
-  {
-	  homePage.enterUser(user);
-  }
+	@Given("^I enter a username (.*)")
+	public void I_enter_a_username(String user) {
+		homePage.enterUser(user);
+	}
 
-  @Given("^I enter a password (.*)")
-  public void I_enter_a_password(String pass) {
-	  homePage.enterPassword(pass);
-  }
+	@Given("^I enter a password (.*)")
+	public void I_enter_a_password(String pass) {
+		homePage.enterPassword(pass);
+	}
 
-  @When("^I click  Sign-In button")
-  public void I_click_sign_in_button() {
-	  homePage.clickButtonSignIn();
-  }
+	@When("^I click  Sign-In button")
+	public void I_click_sign_in_button() {
+		homePage.clickButtonSignIn();
+	}
 
-  @Then("^login result must be (.*)")
-  public void login_results_must_be(String result) {
+	@Then("^login result must be (.*)")
+	public void login_results_must_be(String result) {
 
-	  SignOnPage signOnPage = new SignOnPage(driver);
-	  signOnPage.verifyInPage();
-  }
-
+		SignOnPage signOnPage = new SignOnPage(driver);
+		signOnPage.verifyInPage();
+	}
 
 }

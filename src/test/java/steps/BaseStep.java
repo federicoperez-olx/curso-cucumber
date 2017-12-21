@@ -7,7 +7,7 @@ import cucumber.api.java.Before;
 import pageObjects.HomePage;
 import utils.Context;
 
-public class BaseStep
+public abstract class BaseStep
 {
   protected WebDriver driver;
   protected HomePage homePage;
