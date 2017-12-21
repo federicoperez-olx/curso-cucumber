@@ -1,4 +1,5 @@
-C:\Users\user\eclipse-workspace\AutomationII\src\test\java\pageObjects\SignOnPage.java
-C:\Users\user\eclipse-workspace\AutomationII\src\test\java\steps\turism.java
-C:\Users\user\eclipse-workspace\AutomationII\src\test\java\pageObjects\HomePage.java
-C:\Users\user\eclipse-workspace\AutomationII\src\test\java\Curso\AutomationII\RunCuckesTest.java
+/home/federicoperez/Documents/code/CursoIICucumber/src/test/java/pageObjects/HomePage.java
+/home/federicoperez/Documents/code/CursoIICucumber/src/test/java/pageObjects/SignOnPage.java
+/home/federicoperez/Documents/code/CursoIICucumber/src/test/java/steps/turism.java
+/home/federicoperez/Documents/code/CursoIICucumber/src/test/java/utils/Context.java
+/home/federicoperez/Documents/code/CursoIICucumber/src/test/java/Curso/AutomationII/RunCuckesTest.java
