@@ -1,0 +1,6 @@
+steps/register.class
+utils/Context.class
+pageObjects/HomePage.class
+pageObjects/SignOnPage.class
+steps/turism.class
+Curso/AutomationII/RunCuckesTest.class

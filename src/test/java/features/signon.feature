@@ -1,6 +1,6 @@
 Feature: Register
-
 #newtours.demoaut.com
+
 Scenario Outline: Register
  Given User is in Homepage
  And User clicks register link

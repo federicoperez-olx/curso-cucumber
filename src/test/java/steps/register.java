@@ -35,7 +35,7 @@ public class register {
 	@After
 	public void TearDownTest() {
 		System.out.println("--------------- dependency injection in teardown");
-		driver.close();
+		// driver.close();
 	}
 
 	@Given("^User is in Homepage$")
