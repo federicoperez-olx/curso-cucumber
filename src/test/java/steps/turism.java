@@ -12,6 +12,7 @@ import pageObjects.RegisterPage;
 import utils.Context;
 
 public class turism {
+	
 	private WebDriver driver;
 
 	private HomePage homePage;
@@ -32,7 +33,7 @@ public class turism {
 
 	@After
 	public void TearDownTest() {
-		//driver.close();
+		// driver.close();
 		driver.quit();
 	}
 
